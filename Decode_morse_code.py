@@ -22,3 +22,8 @@ def decode_morse(morse_code):
     
     # Join decoded words with a single space
     return ' '.join(decoded_words)
+
+''' another solution
+def decodeMorse(morseCode):
+    return ' '.join(''.join(MORSE_CODE[c] for c in word.split(' ')) for word in morseCode.strip().split('   '))
+'''
